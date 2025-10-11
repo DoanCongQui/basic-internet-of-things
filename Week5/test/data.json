@@ -1,0 +1,926 @@
+[
+    {
+        "id": "c2c2cf773faa1ca4",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8586b5685fe12a2c",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e2f30a472361f09d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 64,
+                "sy": 70,
+                "gx": 1,
+                "gy": 1,
+                "cx": 1,
+                "cy": 1,
+                "px": 1,
+                "py": 1
+            }
+        }
+    },
+    {
+        "id": "29799f278691cfdd",
+        "type": "ui_group",
+        "name": "Mode",
+        "tab": "8586b5685fe12a2c",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fd7e9717c8838be1",
+        "type": "ui_tab",
+        "name": "Botton",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2c718fd234dd4e22",
+        "type": "ui_group",
+        "name": "BT",
+        "tab": "fd7e9717c8838be1",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "63851cbd6de35d57",
+        "type": "mqtt-broker",
+        "name": "MQTT dq",
+        "broker": "mqtt3.thingspeak.com",
+        "port": 1883,
+        "clientid": "BTUwPBwEBgQnJiYhGyIxLgY",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "21d5372e2c733453",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "8586b5685fe12a2c",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c5d078b2cabebea7",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "8586b5685fe12a2c",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "8fa69008be3bf4a8",
+        "type": "mqtt-broker",
+        "name": "MQTT2",
+        "broker": "mqtt3.thingspeak.com",
+        "port": 1883,
+        "clientid": "Kh8kAwcNNgEZJyo0FzgbJjg",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2af00db03f1a3fc9",
+        "type": "mqtt out",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "topic": "channels/3092104/publish/fields/field8",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8fa69008be3bf4a8",
+        "x": 710,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "29998e050e5d25c7",
+        "type": "inject",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 950,
+        "y": 540,
+        "wires": [
+            [
+                "b8b3855712f706fc"
+            ]
+        ]
+    },
+    {
+        "id": "b8b3855712f706fc",
+        "type": "ui_digital_clock",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "group": "29799f278691cfdd",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "x": 1190,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "49007811210d3d4e",
+        "type": "ui_gauge",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "group": "29799f278691cfdd",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#086391",
+            "#00bfe6",
+            "#3a9acb"
+        ],
+        "seg1": "1",
+        "seg2": "3",
+        "diff": false,
+        "className": "",
+        "x": 1270,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1b2c30be33a8c548",
+        "type": "mqtt in",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "topic": "channels/3092104/subscribe/fields/field1",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "8fa69008be3bf4a8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1000,
+        "y": 340,
+        "wires": [
+            [
+                "49007811210d3d4e",
+                "4a5d16a622d64a71"
+            ]
+        ]
+    },
+    {
+        "id": "faa9c721058ba81a",
+        "type": "ui_gauge",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "group": "21d5372e2c733453",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1260,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9a9efc5b231d7bf3",
+        "type": "mqtt in",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "topic": "channels/3092104/subscribe/fields/field2",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "8fa69008be3bf4a8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1000,
+        "y": 420,
+        "wires": [
+            [
+                "faa9c721058ba81a",
+                "682f708d77dfd89a"
+            ]
+        ]
+    },
+    {
+        "id": "4a5d16a622d64a71",
+        "type": "ui_chart",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "group": "29799f278691cfdd",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "682f708d77dfd89a",
+        "type": "ui_chart",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "group": "21d5372e2c733453",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1260,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c24e0dd63fe539a",
+        "type": "ui_text",
+        "z": "c2c2cf773faa1ca4",
+        "group": "29799f278691cfdd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Đoàn Công Quí-22696151",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "84c198bb556ec09f",
+        "type": "ui_text",
+        "z": "c2c2cf773faa1ca4",
+        "group": "29799f278691cfdd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Lê Đình Kiên 22662591",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 590,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "87c58e69403378a3",
+        "type": "ui_switch",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "label": "LED",
+        "tooltip": "",
+        "group": "21d5372e2c733453",
+        "order": 2,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "field5=1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "field5=0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 520,
+        "wires": [
+            [
+                "2ea0ddcc2f435b38",
+                "f8ed8e42e4149b3a"
+            ]
+        ]
+    },
+    {
+        "id": "ac6b5c400eab5257",
+        "type": "ui_switch",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "label": "Buzzer",
+        "tooltip": "",
+        "group": "21d5372e2c733453",
+        "order": 4,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "field6=1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "field6=0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 320,
+        "y": 620,
+        "wires": [
+            [
+                "604472722385caad",
+                "32e42fbbc22a55ec"
+            ]
+        ]
+    },
+    {
+        "id": "d665daf4070893ca",
+        "type": "ui_switch",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "label": "Relay",
+        "tooltip": "",
+        "group": "21d5372e2c733453",
+        "order": 6,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "field7=1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "field7=0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 720,
+        "wires": [
+            [
+                "78787b541351869d",
+                "8b84f7ea8b1c9ae0"
+            ]
+        ]
+    },
+    {
+        "id": "50c36cb74a24cb81",
+        "type": "ui_switch",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "label": "Manual/Auto",
+        "tooltip": "",
+        "group": "29799f278691cfdd",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "2af00db03f1a3fc9"
+            ]
+        ]
+    },
+    {
+        "id": "598b452337f63cb8",
+        "type": "ui_text",
+        "z": "c2c2cf773faa1ca4",
+        "group": "21d5372e2c733453",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Group 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 380,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "604472722385caad",
+        "type": "ui_led",
+        "z": "c2c2cf773faa1ca4",
+        "order": 5,
+        "group": "21d5372e2c733453",
+        "width": "1",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 470,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "78787b541351869d",
+        "type": "ui_led",
+        "z": "c2c2cf773faa1ca4",
+        "order": 7,
+        "group": "21d5372e2c733453",
+        "width": "1",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 470,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "fa6b1655f5faaecf",
+        "type": "http request",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/update",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "X-THINGSPEAKAPIKEY",
+                "valueType": "other",
+                "valueValue": "8TCXXRHS2MI50OIM"
+            }
+        ],
+        "x": 650,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ea0ddcc2f435b38",
+        "type": "debug",
+        "z": "c2c2cf773faa1ca4",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "fd491962b6545ad2",
+        "type": "http request",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/update",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "X-THINGSPEAKAPIKEY",
+                "valueType": "other",
+                "valueValue": "8TCXXRHS2MI50OIM"
+            }
+        ],
+        "x": 650,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6bd1b799e72a6397",
+        "type": "http request",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/update",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "X-THINGSPEAKAPIKEY",
+                "valueType": "other",
+                "valueValue": "8TCXXRHS2MI50OIM"
+            }
+        ],
+        "x": 650,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8ed8e42e4149b3a",
+        "type": "mqtt out",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "topic": "channels/3092104/publish/fields/field5",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8fa69008be3bf4a8",
+        "x": 910,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "32e42fbbc22a55ec",
+        "type": "mqtt out",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "topic": "channels/3092104/publish/fields/field6",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8fa69008be3bf4a8",
+        "x": 910,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "8b84f7ea8b1c9ae0",
+        "type": "mqtt out",
+        "z": "c2c2cf773faa1ca4",
+        "name": "",
+        "topic": "channels/3092104/publish/fields/field7",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8fa69008be3bf4a8",
+        "x": 910,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "aa5c59c5c29b8904",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-contrib-ui-digital-clock": "1.0.0",
+            "node-red-contrib-ui-led": "0.4.11"
+        }
+    }
+]

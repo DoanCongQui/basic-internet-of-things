@@ -216,11 +216,11 @@ def control_thread():
 
 def upload_thread():
     start = time.time()
-    while time.time() - start < RUN_DURATION:
+    while True:
         avg_temp, avg_hum, avg_volt, avg_dist = get_average(list(window))
         send_to_thingspeak(avg_temp, avg_hum, avg_volt, avg_dist)
         time.sleep(SEND_INTERVAL)
-    print("⏱️ Hoàn thành 45 phút gửi dữ liệu.")
+
 
 # ===== MAIN =====
 if __name__ == "__main__":
@@ -235,3 +235,4 @@ if __name__ == "__main__":
 
     mqtt_client.loop_stop()
     mqtt_client.disconnect()
+

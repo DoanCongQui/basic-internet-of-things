@@ -85,7 +85,7 @@ def wait_for_network():
 # ====== Đọc cảm biến thực tế ======
 def read_sensors():
     t, h = dht_sensor.read()
-    volt = adc.read_voltage(0) / 1000.0     # V
+    volt = adc.read_voltage(0) / 1023 * 3.3     # V
     dist = ultrasonic.get_distance()        # cm
     return t, h, volt, dist
 
@@ -235,4 +235,5 @@ if __name__ == "__main__":
 
     mqtt_client.loop_stop()
     mqtt_client.disconnect()
+
 

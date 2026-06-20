@@ -37,13 +37,23 @@ def main():
     module_1_off = 6
     module_2_off = 2
 
+    old_btn1 = False
+    old_btn2 = False
+
     try:
         while True:
+            # ==========================
+            #      LED Module 1  
+            # ==========================
             on_off_led(led_1_i, module_1_on, module_1_off)
+
+            # ==========================
+            #      LED Module 2  
+            # ==========================
             on_off_led(led_2_i, module_2_on, module_2_off)
 
             # ==========================
-            #      Button Module 3  
+            #      LED Module 3  
             # ==========================
             if btn_3_i.is_pressed():
                 print("Button 3 pressed")

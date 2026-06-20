@@ -15,8 +15,9 @@ try:
             GPIO.output(pin, GPIO.LOW)   # On LED
             time.sleep(1)                # Delay 1 giay
             GPIO.output(pin, GPIO.HIGH)  # Off LED
+            time.sleep(1)                # Delay 1 giay
 except KeyboardInterrupt:
-    print("Stop")
+    print("Stop program")
 
 finally:
     GPIO.cleanup() 

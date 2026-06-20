@@ -19,3 +19,28 @@ source env/bin/activate
 python3 -m pip install --upgrade pip setuptools wheel
 pip3 install .
 ```
+
+- Cuối cùng clone example và chạy thử các mẫu có sẳn
+
+```
+sudo apt install git
+cd ~/
+git clone git@github.com:DoanCongQui/basic-internet-of-things.git
+```
+---
+## Tuần 1
+
+Ta đi vào thư mục tuần 1 để chạy các code bên trong [Tuần 1](https://github.com/DoanCongQui/basic-internet-of-things/tree/main/Week1).
+
+Example 2: 
+
+```
+source ~/env/bin/activate
+python3 ~/basic-internet-of-things/Week1/Ex2.py
+```
+Example 3: 
+
+```
+source ~/env/bin/activate
+python3 ~/basic-internet-of-things/Week1/Ex3.py
+```
